@@ -1,0 +1,145 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:white;
+}
+
+body {
+    background-color:rgb(0, 30, 75);
+}
+
+#title {
+    margin-top:40px;
+}
+
+#board {
+    margin-bottom:60px;
+}
+
+.column {
+
+    background-color: rgb(0, 43, 122);
+    align-self: center;
+    min-height: 730px;
+
+    .upgrade {
+        background-color: rgb(0, 58, 134);
+        border-radius: 5px;
+        padding-top:30px; padding-bottom:5px;
+        margin-top:50px;
+
+        img {
+            border-radius:5px;
+        }
+    }
+
+    .upgrade:last-child {
+        margin-bottom:50px;
+    }
+
+    h4{
+        font-size:30px;
+        padding-top:49px;
+        padding-bottom:50px;
+    }
+
+    #cookie {
+        padding-top: 56px;
+        padding-bottom: 57px;
+    }
+
+    h5 {
+        font-size: 26px;
+        margin-top:38px;
+        padding-top:35px;
+        padding-bottom:35px;
+        margin-bottom:30px;
+        background-color:rgb(0, 34, 54);
+        border-radius:10px;
+    }
+
+}
+
+.upgrade:hover {
+    cursor:pointer;
+    filter:brightness(1.1);
+}
+
+#cookie:hover {
+    cursor: pointer;
+}
+
+#cookie:active {
+    filter: brightness(1.1);
+}
+
+#menuSlider {
+    display:none;
+}
+
+#compactMenu {
+    margin-top:40px;
+
+    button {
+        margin-right:20px;
+        width:100px;
+        background-color: rgb(30, 16, 78);
+        font-size:20px;
+        border: 1px solid rgb(26, 12, 59);
+        box-shadow: none;
+    } button:last-child {
+        margin-right:0px;
+    } button:hover {
+        background-color: rgb(42, 23, 105);
+    }
+}
+
+// 577 - 1200 
+
+@media screen and (max-width:1200px) {
+    #board {
+        display:block;
+    }
+
+    .column {
+        width:100%;
+        max-width:100%;
+
+        .upgrade {
+            margin-top:0px;
+            margin-right:10px;
+            padding:5px;
+            padding-top:15px;
+            padding-bottom:15px;
+            margin-bottom:0px;
+            width:100%;
+        }
+
+    }
+    .upgrades {
+        padding-top:10px;
+        min-height: 0px;
+        max-height:210px;
+        padding-bottom:10px;
+        display:flex;
+        justify-content: center;
+    }
+
+    #bus, #clickUpg {
+        min-height:0px;
+        margin-bottom:0px;
+        margin-right:0px;
+    }
+    
+    #mainBox {
+        margin-top:30px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    #cookie {
+        width:70%;
+        height:70%;
+    }
+}
